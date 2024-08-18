@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #3B4664;
+}
+
+.calculator {
+    background-color: #3B4664;
+    color: #FFFFFF;
+    margin: 20px;
+    width: 30vw;
+}
+
+.heading{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.display {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    background-color: #181F32;
+    padding: 20px 25px;
+    margin: 15px 0px;
+    border-radius: 10px;
+    text-align: right;
+    width: 100%; 
+    word-wrap: break-word; 
+    white-space: pre-wrap; 
+    overflow-wrap: break-word; 
+}
+
+.buttons {
+    background-color: #252D44;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #EAE3DB;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #252D44;
+    padding: auto;
+}
+
+.btn:hover {
+    background-color: #929ab3;
+}
+
+.btn:active {
+    background-color: #7f8aac;
+}
+
+.del{
+    background-color: #647299;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.reset {
+    grid-column: span 2;
+    background-color: #647299;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.equals {
+    grid-column: span 2;
+    background-color: #D13F30;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 5px;
+}
+
+@media (max-width: 1200px) {
+    .calculator {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .calculator {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .calculator {
+        width: 55vw;
+    }
+
+    .display {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+
+    .btn {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        width: 80vw;
+    }
+
+    .display {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
